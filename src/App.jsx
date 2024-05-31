@@ -79,7 +79,7 @@ const saveToLS = (params) => {
       {todos.map(item=>{
 
        return <div key={item.id} className="todo flex md:w-1/2 my-3 justify-between">
-        <input className='md:w-1/6' name={item.id}onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} id='' />
+        <input className='md:w-1/8' name={item.id}onChange={handleCheckbox} type="checkbox" checked={item.isCompleted} id='' />
           <div className={item.isCompleted?"line-through":""}>{item.todo}</div>
           <div className="button flex h-full">
             <button onClick={(e)=>{handleEdit(e,item.id)}} className="bg-violet-600 hover:bg-violet-950 p-2 py-1 text-sm font-bold text-white rounded-md mx-1"><FaEdit /></button>
